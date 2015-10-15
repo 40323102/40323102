@@ -66,7 +66,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20150915155634.1"><vh>@clean cadpaw1.html</vh>
+<v t="amd.20150915155634.1" a="E"><vh>@clean cadpaw1.html</vh>
 <v t="amd.20150915155634.2" a="E"><vh>html 標註</vh>
 <v t="amd.20150915155634.3" a="E"><vh>head</vh>
 <v t="amd.20150915155634.4"><vh>title - 標題</vh></v>
@@ -266,7 +266,7 @@
 </v>
 </v>
 </v>
-<v t="ibm.20150918175403.1"><vh>@clean cpw1.html</vh>
+<v t="ibm.20150918175403.1" a="E"><vh>@clean cpw1.html</vh>
 <v t="ibm.20150918175403.2"><vh>檔案說明</vh></v>
 <v t="ibm.20150918175403.3" a="E"><vh>html 標註</vh>
 <v t="ibm.20150918175403.4" a="E"><vh>body 標註</vh>
