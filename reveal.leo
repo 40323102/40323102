@@ -38,6 +38,7 @@
 <v t="amd.20150919124128.1"><vh>@button pelican content</vh></v>
 <v t="amd.20150919114010.1" a="E"><vh>@path pelican\content</vh>
 <v t="amd.20150919114035.1"><vh>@edit 2015cphww1.md</vh></v>
+<v t=".20151029153211.1"><vh>@edit 2015cphww3.md</vh></v>
 <v t="amd.20150920000911.1"><vh>@edit 2015cpnote1.md</vh></v>
 </v>
 <v t="amd.20150919120205.1"><vh>以下為 reveal 投影片</vh></v>
@@ -284,7 +285,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20150915211341.1"><vh>@clean simplest.html</vh>
+<v t="amd.20150915211341.1" a="E"><vh>@clean simplest.html</vh>
 <v t="amd.20150917085040.1"><vh>檔案說明</vh></v>
 <v t="amd.20150915211351.1" a="E"><vh>html 標註</vh>
 <v t="amd.20150915211351.4" a="E"><vh>body 標註</vh>
@@ -296,6 +297,21 @@
 </v>
 </v>
 <v t="amd.20150915211351.15"><vh>script</vh></v>
+</v>
+</v>
+</v>
+<v t=".20151029155124.1" a="E"><vh>@clean simplest3.html</vh>
+<v t=".20151029155124.2"><vh>檔案說明</vh></v>
+<v t=".20151029155124.3" a="E"><vh>html 標註</vh>
+<v t=".20151029155124.4" a="E"><vh>body 標註</vh>
+<v t=".20151029155124.5" a="E"><vh>div class="reveal"</vh>
+<v t=".20151029155124.6" a="E"><vh>div class="slides"</vh>
+<v t=".20151029155124.7"><vh>有關我的作業</vh></v>
+<v t=".20151029155124.8"><vh>作業任務一</vh></v>
+<v t=".20151029155124.9"><vh>第3張投影片</vh></v>
+</v>
+</v>
+<v t=".20151029155124.10"><vh>script</vh></v>
 </v>
 </v>
 </v>
@@ -493,6 +509,78 @@
 </v>
 </vnodes>
 <tnodes>
+<t tx=".20151029155124.1">@language xml
+@tabwidth -4
+@others
+
+</t>
+<t tx=".20151029155124.10">&lt;script src="lib/js/head.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/reveal.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+&lt;/script&gt;
+	
+</t>
+<t tx=".20151029155124.2">&lt;!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 &lt;section&gt;&lt;/section&gt; 標示
+且支援平行與垂直的投影片配置方法
+--&gt;
+</t>
+<t tx=".20151029155124.3">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;最簡單的 reveal 超文件&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/reveal.min.css"&gt;
+	&lt;link rel="stylesheet" href="css/theme/default.css" id="theme"&gt;	
+	&lt;!--增加對於 IE 早期版本的支援 --&gt;
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="lib/js/html5shiv.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+&lt;/head&gt;
+@others
+</t>
+<t tx=".20151029155124.4">&lt;body&gt;
+@others
+&lt;/body&gt;
+</t>
+<t tx=".20151029155124.5">&lt;!-- 將整個投影片包在 "reveal" class 中 --&gt;
+&lt;div class="reveal"&gt;
+@others
+&lt;/div&gt;
+</t>
+<t tx=".20151029155124.6">&lt;!-- 將所有投影片包在 "slides" class 中 --&gt;
+&lt;div class="slides"&gt;
+@others
+&lt;/div&gt;
+</t>
+<t tx=".20151029155124.7">&lt;!-- 以下為投影片 --&gt;
+&lt;!-- 每一個 section 都代表一張投影片,  --&gt;
+&lt;!-- section 標註中的多 section 標註, 將往下垂直延伸 --&gt;
+&lt;section&gt;
+    &lt;h1&gt;設計二甲&lt;/h1&gt;
+    &lt;p&gt;40323102 林宛儒 &lt;/p&gt;		
+&lt;/section&gt;
+	
+</t>
+<t tx=".20151029155124.8">&lt;section id="hw-task-one"&gt;
+    &lt;h1&gt;做法: &lt;/h1&gt;
+    &lt;p&gt;1.到老師的wordpress下載solvespace  2. 進入老師給的solvespace的網址看著裡面的實體與英文說明試做一次&lt;/p&gt;
+   
+&lt;/section&gt;
+				
+</t>
+<t tx=".20151029155124.9">&lt;section&gt;
+    &lt;h1&gt;自評與心得&lt;/h1&gt;
+    &lt;p&gt;用老師的軟體做了一個實體,發現還是有難度的,因為總是做到一半的時候就會有錯誤發生,然後也是因為英文的部分所以不太懂要怎麼去做修改,後來就問已經完成的同學,感謝同學的幫忙,最後終於成功了。&lt;/p&gt;
+    &lt;p&gt;自評分數:70&lt;a href="#/hw-task-one"&gt;&lt;/a&gt;
+&lt;/section&gt;
+				
+</t>
 <t tx="amd.20150913232631.1"></t>
 <t tx="amd.20150913232631.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -1988,9 +2076,9 @@ Code syntax highlighting courtesy of &lt;a href="http://softwaremaniacs.org/soft
 @others
 </t>
 <t tx="amd.20150915211351.12">&lt;section&gt;
-    &lt;h1&gt;第3張投影片&lt;/h1&gt;
-    &lt;p&gt;成績自評分數的量化依據?&lt;/p&gt;
-    &lt;p&gt;可以連結到內部投影片&lt;a href="#/hw-task-one"&gt;作業任務一&lt;/a&gt;
+    &lt;h1&gt;自評與心得&lt;/h1&gt;
+    &lt;p&gt;從上學期就大概接觸過這類型的課程內容,這學期又在聽老師大致上講解一次,其實比之前更懂得在幹嘛,也知道甚麼時候要打甚麼指令有甚麼功用相信只要多做幾次,就可以往更深入的內容邁進!&lt;/p&gt;
+    &lt;p&gt;自評分數:75&lt;a href="#/hw-task-one"&gt;&lt;/a&gt;
 &lt;/section&gt;
 				
 </t>
@@ -2021,15 +2109,15 @@ Code syntax highlighting courtesy of &lt;a href="http://softwaremaniacs.org/soft
 &lt;!-- 每一個 section 都代表一張投影片,  --&gt;
 &lt;!-- section 標註中的多 section 標註, 將往下垂直延伸 --&gt;
 &lt;section&gt;
-    &lt;h1&gt;有關我的作業&lt;/h1&gt;
-    &lt;p&gt;學號姓名與日期&lt;/p&gt;		
+    &lt;h1&gt;設計二甲&lt;/h1&gt;
+    &lt;p&gt;40323102 林宛儒 &lt;/p&gt;		
 &lt;/section&gt;
 	
 </t>
 <t tx="amd.20150915211351.9">&lt;section id="hw-task-one"&gt;
-    &lt;h1&gt;作業任務一&lt;/h1&gt;
-    &lt;p&gt;有關作業任務一的說明&lt;/p&gt;
-    &lt;p&gt;請參考 &lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;
+    &lt;h1&gt;做法:&lt;/h1&gt;
+    &lt;p&gt;1.下載fix和reveal  2.開fix和start 開始在cmd輸入指令 3.git clone網址然後建分支 4.然後再複製revaeal裡的東西除了read me 貼到自己的資料夾 5.在git add -A所有的檔案拍快照 6.git commit -m "initial add all files" 解開 7.在確認自己身分git config 8.最後在git push origin gh-pages  9.之後在leo中更改內容案save然後再點pelican-content 10.在push一次&lt;/p&gt;
+   
 &lt;/section&gt;
 				
 </t>
@@ -2139,7 +2227,8 @@ ip.config.ProfileDir </t>
 <t tx="amd.20150919120205.1"></t>
 <t tx="amd.20150919124128.1">@language python
 import os
-os.system('''pelican pelican/content -o ./ -s pelican/publishconf.py -t theme/pelican-bootstrap3
+#os.system('''pelican pelican/content -o ./ -s pelican/publishconf.py -t theme/pelican-bootstrap3''')
+os.system('''pelican pelican/content -o ./ -s pelican/publishconf.py -t theme/pelican-octopress
 ''')
 g.es("pelican 執行完畢")</t>
 <t tx="amd.20150920030003.1">必須使用 IPython 3.2.1
